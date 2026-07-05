@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="640" viewBox="0 0 960 640" role="img" aria-labelledby="title desc">
+  <title id="title">JobNest workspace illustration</title>
+  <desc id="desc">A bright freelance marketplace workspace with profile cards, job cards, and collaboration screens.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#e0f2fe"/>
+      <stop offset="0.55" stop-color="#eef2ff"/>
+      <stop offset="1" stop-color="#dcfce7"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0" x2="1">
+      <stop offset="0" stop-color="#2563eb"/>
+      <stop offset="1" stop-color="#14b8a6"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="22" stdDeviation="24" flood-color="#0f172a" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+  <rect width="960" height="640" rx="42" fill="url(#sky)"/>
+  <circle cx="808" cy="112" r="64" fill="#fef3c7"/>
+  <circle cx="124" cy="516" r="88" fill="#bfdbfe" opacity="0.8"/>
+  <rect x="160" y="132" width="640" height="386" rx="30" fill="#ffffff" filter="url(#shadow)"/>
+  <rect x="190" y="164" width="580" height="62" rx="18" fill="url(#screen)"/>
+  <circle cx="224" cy="195" r="10" fill="#ffffff" opacity="0.9"/>
+  <circle cx="256" cy="195" r="10" fill="#ffffff" opacity="0.7"/>
+  <circle cx="288" cy="195" r="10" fill="#ffffff" opacity="0.55"/>
+  <rect x="214" y="262" width="178" height="196" rx="20" fill="#f8fafc" stroke="#dbe3ef" stroke-width="3"/>
+  <circle cx="303" cy="328" r="42" fill="#bfdbfe"/>
+  <path d="M250 422c16-43 90-43 106 0" fill="#2563eb" opacity="0.85"/>
+  <rect x="430" y="262" width="302" height="58" rx="16" fill="#ecfeff" stroke="#99f6e4" stroke-width="3"/>
+  <rect x="458" y="284" width="162" height="12" rx="6" fill="#0f766e"/>
+  <rect x="430" y="344" width="302" height="58" rx="16" fill="#eff6ff" stroke="#bfdbfe" stroke-width="3"/>
+  <rect x="458" y="366" width="210" height="12" rx="6" fill="#1d4ed8"/>
+  <rect x="430" y="426" width="302" height="58" rx="16" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="3"/>
+  <rect x="458" y="448" width="132" height="12" rx="6" fill="#15803d"/>
+  <path d="M138 252c62-48 136-42 194 12" fill="none" stroke="#14b8a6" stroke-width="12" stroke-linecap="round"/>
+  <path d="M642 552c48-58 126-80 200-48" fill="none" stroke="#2563eb" stroke-width="12" stroke-linecap="round"/>
+  <rect x="102" y="356" width="138" height="82" rx="22" fill="#ffffff" filter="url(#shadow)"/>
+  <rect x="128" y="382" width="86" height="12" rx="6" fill="#2563eb"/>
+  <rect x="128" y="410" width="58" height="10" rx="5" fill="#94a3b8"/>
+  <rect x="724" y="82" width="120" height="76" rx="20" fill="#ffffff" filter="url(#shadow)"/>
+  <path d="M752 124l22 20 42-48" fill="none" stroke="#16a34a" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

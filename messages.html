@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Messages | JobNest</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="index.html"><span class="brand-mark">JN</span><span>JobNest</span></a>
+      <div class="nav-links">
+        <a href="profile.html">Profile</a>
+        <a href="notifications.html">Notifications</a>
+        <a href="wallet.html">Wallet</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="page-hero">
+      <div>
+        <p class="eyebrow">Messages</p>
+        <h1>Conversations stay close to the work.</h1>
+        <p class="lead">Review conversation lists, open chat windows, send messages, upload files, use emoji, and start voice or video calls.</p>
+      </div>
+      <img class="page-hero-image" src="assets/images/jobnest-workspace.svg" alt="JobNest messaging workspace illustration">
+    </section>
+
+    <section class="chat-shell">
+      <aside class="chat-sidebar">
+        <div class="panel-heading"><h2>Conversation list</h2><p class="muted">Live account messages appear below.</p></div>
+        <div class="conversation-list" data-messages-list>
+          <article class="conversation-item"><h3>Loading messages...</h3><p class="muted">Please wait.</p></article>
+        </div>
+      </aside>
+
+      <section class="chat-window">
+        <header class="chat-header">
+          <div class="card-row">
+            <div><h2>Chat window</h2><p class="muted">Demo Project Room</p></div>
+            <div class="quick-actions"><button class="button secondary" type="button">Voice</button><button class="button secondary" type="button">Video call</button></div>
+          </div>
+        </header>
+        <div class="message-stream">
+          <div class="message-bubble">Hi, can you share a timeline for the first milestone?</div>
+          <div class="message-bubble sent">Yes. I can send a scope and schedule today.</div>
+          <div class="message-bubble">Great. Please attach examples from your portfolio too.</div>
+        </div>
+        <form class="chat-composer form" data-message-form>
+          <label class="field-label">Send message<textarea name="body" placeholder="Type your message"></textarea></label>
+          <input name="subject" type="hidden" value="New JobNest message">
+          <div class="quick-actions">
+            <label class="button secondary">Upload file<input type="file" hidden></label>
+            <button class="button secondary" type="button">Emoji</button>
+            <button class="button secondary" type="button">Voice message</button>
+            <button class="button" type="submit">Send Message</button>
+          </div>
+        </form>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="footer-bottom">JobNest &copy; <span data-year></span>. Messages.</div></footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

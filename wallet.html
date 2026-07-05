@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wallet | JobNest</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="index.html"><span class="brand-mark">JN</span><span>JobNest</span></a>
+      <div class="nav-links">
+        <a href="client-dashboard.html">Client</a>
+        <a href="freelancer-dashboard.html">Freelancer</a>
+        <a href="settings.html">Settings</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="page-hero">
+      <div>
+        <p class="eyebrow">Money center</p>
+        <h1>Wallet</h1>
+        <p class="lead">Track current balance, total earnings, deposits, withdrawals, payment methods, bank accounts, PayPal, Stripe, and transaction history.</p>
+      </div>
+      <img class="page-hero-image" src="assets/images/jobnest-workspace.svg" alt="JobNest wallet workspace illustration">
+    </section>
+
+    <section class="grid" data-wallet>
+      <article class="card"><h2>Current balance</h2><p class="stat" data-wallet-available>$0</p><p class="muted">Available now</p></article>
+      <article class="card"><h2>Total earnings</h2><p class="stat" data-wallet-withdrawn>$0</p><p class="muted">Lifetime withdrawn</p></article>
+      <article class="card"><h2>Pending</h2><p class="stat" data-wallet-pending>$0</p><p class="muted">Awaiting release</p></article>
+      <article class="card"><h2>Withdraw</h2><p class="muted">Move available funds to your bank, PayPal, or Stripe account.</p><button class="button">Withdraw</button></article>
+      <article class="card"><h2>Deposit</h2><p class="muted">Add funds for job deposits or upcoming projects.</p><button class="button secondary">Deposit</button></article>
+      <article class="card"><h2>Add bank</h2><p class="muted">Connect a bank account for future transfers.</p><button class="button secondary">Add Bank</button></article>
+    </section>
+
+    <section class="content-section two-column">
+      <article class="panel">
+        <div class="panel-heading"><p class="eyebrow">Transaction history</p><h2>Recent wallet activity</h2></div>
+        <div class="timeline">
+          <article><strong>Project deposit</strong><span class="muted">$450 held for React Landing Page.</span></article>
+          <article><strong>Pending release</strong><span class="muted">$320 waiting for client approval.</span></article>
+          <article><strong>Withdraw history</strong><span class="muted">$1,200 sent to connected bank account.</span></article>
+        </div>
+      </article>
+
+      <aside class="panel">
+        <div class="panel-heading"><p class="eyebrow">Payment methods</p><h2>Connected options</h2></div>
+        <div class="timeline">
+          <article><strong>Bank account</strong><span class="muted">Primary withdrawal method.</span></article>
+          <article><strong>PayPal</strong><span class="muted">Ready for quick payouts.</span></article>
+          <article><strong>Stripe</strong><span class="muted">Prepared for card deposits and business payouts.</span></article>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="footer-bottom">JobNest &copy; <span data-year></span>. Wallet.</div></footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+{
+  "users": [
+    {
+      "id": "u_admin",
+      "name": "Admin User",
+      "email": "admin@jobnest.local",
+      "password": "admin123",
+      "role": "admin",
+      "bio": "Platform administrator"
+    },
+    {
+      "id": "u_cfd303ad6bca283a",
+      "name": "Google Demo User",
+      "email": "google.user@jobnest.local",
+      "password": "google_23f13c7554b1c097",
+      "role": "freelancer",
+      "bio": "Signed in with Google.",
+      "googleId": "demo-google-user"
+    }
+  ],
+  "jobs": [],
+  "messages": [
+    {
+      "id": "m_960dc61656a597b2",
+      "userId": "u_admin",
+      "subject": "New JobNest message",
+      "body": "hi",
+      "createdAt": "2026-07-05T15:57:02.113Z"
+    },
+    {
+      "id": "m_0b0855bdaf5bb3a2",
+      "userId": "u_cfd303ad6bca283a",
+      "subject": "Welcome to JobNest",
+      "body": "Your Google account is connected.",
+      "createdAt": "2026-07-05T15:54:26.501Z"
+    }
+  ],
+  "wallet": [
+    {
+      "userId": "u_admin",
+      "available": 0,
+      "pending": 0,
+      "withdrawn": 0
+    },
+    {
+      "userId": "u_cfd303ad6bca283a",
+      "available": 0,
+      "pending": 0,
+      "withdrawn": 0
+    }
+  ]
+}

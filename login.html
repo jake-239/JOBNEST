@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | JobNest</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="index.html"><span class="brand-mark">JN</span><span>JobNest</span></a>
+      <div class="nav-links">
+        <a href="signup.html" data-guest-only>Signup</a>
+        <a href="#" data-logout data-auth-only>Logout</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page auth-shell">
+    <section>
+      <p class="eyebrow">Welcome back</p>
+      <h1>Login</h1>
+      <p class="lead">Enter your email and password to open your JobNest dashboard.</p>
+      <img class="page-image" src="assets/images/jobnest-workspace.svg" alt="JobNest login workspace illustration">
+      <div class="grid">
+        <article class="card"><h3>Client demo</h3><p class="muted">client@jobnest.local / client123</p></article>
+        <article class="card"><h3>Freelancer demo</h3><p class="muted">freelancer@jobnest.local / freelancer123</p></article>
+        <article class="card"><h3>Admin demo</h3><p class="muted">admin@jobnest.local / admin123</p></article>
+      </div>
+    </section>
+
+    <section class="panel auth-panel">
+      <form class="form" data-login-form>
+        <label>Email<input name="email" type="email" placeholder="you@example.com" required></label>
+        <label>Password<input name="password" type="password" placeholder="Password" required></label>
+        <div class="card-row">
+          <label class="inline-check"><input name="remember" type="checkbox"> Remember me</label>
+          <a class="muted" href="contact.html">Forgot password?</a>
+        </div>
+        <button class="button" type="submit">Login</button>
+        <div class="divider">or</div>
+        <div class="google-auth-slot" data-google-button data-google-context="signin"></div>
+        <button class="button secondary" type="button" data-google-fallback data-google-context="signin" hidden>Continue with Google</button>
+        <button class="button ghost" type="button">Continue with GitHub</button>
+        <p class="muted">No account yet? <a href="signup.html">Sign up</a></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="footer-bottom">JobNest &copy; <span data-year></span>. Login securely.</div></footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

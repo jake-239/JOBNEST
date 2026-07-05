@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browse Jobs | JobNest</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="index.html"><span class="brand-mark">JN</span><span>JobNest</span></a>
+      <div class="nav-links">
+        <a href="categories.html">Categories</a>
+        <a href="saved-jobs.html">Saved Jobs</a>
+        <a href="freelancer-dashboard.html">Dashboard</a>
+        <a class="button" href="signup.html">Apply Today</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="page-hero">
+      <div>
+        <p class="eyebrow">Find work</p>
+        <h1>Browse Jobs</h1>
+        <p class="lead">Search active JobNest opportunities by keyword, category, budget, and client rating.</p>
+      </div>
+      <img class="page-hero-image" src="assets/images/jobnest-workspace.svg" alt="JobNest job browsing workspace illustration">
+    </section>
+
+    <form class="toolbar" data-job-filters>
+      <label class="field-label">Search jobs<input name="search" type="search" placeholder="Search by title, skill, or client"></label>
+      <label class="field-label">Category<select name="category"><option value="">All categories</option><option>Web Development</option><option>Design</option><option>Writing</option><option>Marketing</option></select></label>
+      <label class="field-label">Minimum budget<input name="budget" type="number" min="0" placeholder="300"></label>
+      <button class="button" type="button">Filter</button>
+    </form>
+
+    <div class="category-list" aria-label="Popular job categories">
+      <a href="categories.html">Web Development</a>
+      <a href="categories.html">UI Design</a>
+      <a href="categories.html">Writing</a>
+      <a href="categories.html">Marketing</a>
+      <a href="categories.html">Branding</a>
+      <a href="categories.html">Support</a>
+    </div>
+
+    <section class="filter-shell">
+      <aside class="panel filter-panel">
+        <h2>Filters</h2>
+        <label class="inline-check"><input type="checkbox"> Verified clients</label>
+        <label class="inline-check"><input type="checkbox"> Fixed price</label>
+        <label class="inline-check"><input type="checkbox"> Urgent hiring</label>
+        <label class="inline-check"><input type="checkbox"> Attachments included</label>
+        <div class="tag-cloud"><span>Remote</span><span>Part time</span><span>Expert</span><span>Beginner</span></div>
+      </aside>
+
+      <section>
+        <div class="grid" data-jobs-list>
+          <article class="card job-card">
+            <div>
+              <span class="badge">Loading</span>
+              <h2>Loading jobs...</h2>
+              <p class="muted">Start the JobNest server to load live jobs from the database.</p>
+            </div>
+            <div class="job-card-footer"><strong>$0</strong><span class="rating">Client rating</span><a class="button secondary" href="job-details.html">Apply</a></div>
+          </article>
+        </div>
+
+        <nav class="pagination" aria-label="Pagination">
+          <a class="button secondary" href="#">Previous</a>
+          <a class="button" href="#">1</a>
+          <a class="button secondary" href="#">2</a>
+          <a class="button secondary" href="#">3</a>
+          <a class="button secondary" href="#">Next</a>
+        </nav>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div><h3>JobNest</h3><p>Browse better projects and apply with confidence.</p></div>
+      <div><h4>Work</h4><div class="footer-links"><a href="browse-jobs.html">Jobs</a><a href="saved-jobs.html">Saved Jobs</a><a href="freelancer-dashboard.html">Freelancer Dashboard</a></div></div>
+      <div><h4>Company</h4><div class="footer-links"><a href="about.html">About</a><a href="contact.html">Contact</a><a href="faq.html">FAQ</a></div></div>
+      <div><h4>Legal</h4><div class="footer-links"><a href="privacy-policy.html">Privacy</a><a href="terms.html">Terms</a></div></div>
+    </div>
+    <div class="footer-bottom">JobNest &copy; <span data-year></span>.</div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

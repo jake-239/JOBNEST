@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Freelancer Dashboard | JobNest</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="index.html"><span class="brand-mark">JN</span><span>JobNest</span></a>
+      <div class="nav-links">
+        <a href="browse-jobs.html">Browse Jobs</a>
+        <a href="messages.html">Messages</a>
+        <a href="wallet.html">Wallet</a>
+        <a href="profile.html">Profile</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page dashboard">
+    <aside class="sidebar">
+      <a class="active" href="#welcome">Overview</a>
+      <a href="browse-jobs.html">Available Jobs</a>
+      <a href="#applications">Applied Jobs</a>
+      <a href="messages.html">Messages</a>
+      <a href="wallet.html">Wallet</a>
+      <a href="profile.html">Portfolio</a>
+    </aside>
+
+    <section data-freelancer-dashboard>
+      <section id="welcome" class="page-hero">
+        <div>
+          <p class="eyebrow">Welcome, <span data-user-name>Freelancer</span></p>
+          <h1>Freelancer Dashboard</h1>
+          <p class="lead">Track earnings, applications, active projects, messages, wallet activity, reviews, skills, and portfolio updates.</p>
+          <a class="button" href="browse-jobs.html">Find Available Jobs</a>
+        </div>
+        <img class="page-hero-image" src="assets/images/jobnest-workspace.svg" alt="JobNest freelancer dashboard workspace illustration">
+      </section>
+
+      <section class="grid">
+        <article class="card"><h2>Earnings</h2><p class="stat">$2.4k</p><p class="muted">This month</p></article>
+        <article class="card"><h2>Available jobs</h2><p class="stat" data-freelancer-available-jobs>0</p><p class="muted">Open roles matching your skills</p></article>
+        <article class="card" id="applications"><h2>Applied jobs</h2><p class="stat" data-freelancer-applications>0</p><p class="muted">Applications sent</p></article>
+        <article class="card"><h2>Active projects</h2><p class="stat" data-freelancer-contracts>0</p><p class="muted">Contracts in progress</p></article>
+        <article class="card"><h2>Messages</h2><p class="stat">7</p><p class="muted">Unread client replies</p></article>
+        <article class="card"><h2>Wallet</h2><p class="stat">$1.2k</p><p class="muted">Available balance</p></article>
+      </section>
+
+      <section class="admin-panel two-column">
+        <article class="panel">
+          <div class="panel-heading"><p class="eyebrow">Reviews</p><h2>Client feedback</h2></div>
+          <div class="timeline">
+            <article><strong>5.0 from BrightCart</strong><span class="muted">"Fast, clear, and excellent responsive design work."</span></article>
+            <article><strong>4.9 from Northstar Studio</strong><span class="muted">"Delivered polished UI components ahead of schedule."</span></article>
+          </div>
+        </article>
+        <article class="panel">
+          <div class="panel-heading"><p class="eyebrow">Skills and portfolio</p><h2>Profile strength</h2></div>
+          <div class="tag-cloud"><span>React</span><span>CSS</span><span>Landing Pages</span><span>Accessibility</span><span>Dashboards</span></div>
+          <p class="muted">Add recent work, certificates, and stronger project summaries to win more client replies.</p>
+          <a class="button secondary" href="profile.html">Update Portfolio</a>
+        </article>
+      </section>
+
+      <section class="admin-panel">
+        <div class="panel-heading"><p class="eyebrow">Notifications</p><h2>What needs attention</h2></div>
+        <div class="timeline">
+          <article><strong>Saved job closes in 2 days</strong><span class="muted">Brand Identity Kit is still accepting proposals.</span></article>
+          <article><strong>Wallet withdrawal available</strong><span class="muted">Funds from completed work can be withdrawn.</span></article>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="footer-bottom">JobNest &copy; <span data-year></span>. Freelancer workspace.</div></footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

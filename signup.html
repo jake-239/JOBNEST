@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup | JobNest</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="index.html"><span class="brand-mark">JN</span><span>JobNest</span></a>
+      <div class="nav-links">
+        <a href="login.html" data-guest-only>Login</a>
+        <a href="#" data-logout data-auth-only>Logout</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page auth-shell">
+    <section>
+      <p class="eyebrow">Create account</p>
+      <h1>Start your JobNest workspace.</h1>
+      <p class="lead">Create a client or freelancer account, agree to the terms, and step directly into the dashboard built for your role.</p>
+      <img class="page-image" src="assets/images/jobnest-workspace.svg" alt="JobNest account signup workspace illustration">
+      <div class="grid">
+        <article class="card"><h3>Clients</h3><p class="muted">Post jobs, hire freelancers, manage deposits, and track activity.</p></article>
+        <article class="card"><h3>Freelancers</h3><p class="muted">Apply to jobs, build a portfolio, collect reviews, and manage earnings.</p></article>
+      </div>
+    </section>
+
+    <section class="panel auth-panel">
+      <form class="form" data-signup-form>
+        <label>Name<input name="name" type="text" placeholder="Your name" required></label>
+        <label>Email<input name="email" type="email" placeholder="you@example.com" required></label>
+        <label>Choose account<select name="role"><option value="client">Client</option><option value="freelancer">Freelancer</option></select></label>
+        <label>Password<input name="password" type="password" placeholder="Password" minlength="6" required></label>
+        <label>Confirm password<input name="confirmPassword" type="password" placeholder="Confirm password" minlength="6" required></label>
+        <label class="inline-check"><input name="terms" type="checkbox" required> I agree to the JobNest terms and privacy policy.</label>
+        <button class="button" type="submit">Create Account</button>
+        <div class="divider">or</div>
+        <div class="google-auth-slot" data-google-button data-google-context="signup"></div>
+        <button class="button secondary" type="button" data-google-fallback data-google-context="signup" hidden>Sign up with Google</button>
+        <p class="muted">Already have an account? <a href="login.html">Login</a></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="footer-bottom">JobNest &copy; <span data-year></span>. Create your account.</div></footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Client Dashboard | JobNest</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="index.html"><span class="brand-mark">JN</span><span>JobNest</span></a>
+      <div class="nav-links">
+        <a href="post-job.html">Post Job</a>
+        <a href="messages.html">Messages</a>
+        <a href="wallet.html">Wallet</a>
+        <a href="profile.html">Profile</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page dashboard">
+    <aside class="sidebar">
+      <a class="active" href="#welcome">Overview</a>
+      <a href="post-job.html">Post Job</a>
+      <a href="#jobs">Jobs</a>
+      <a href="messages.html">Messages</a>
+      <a href="wallet.html">Wallet</a>
+      <a href="notifications.html">Notifications</a>
+    </aside>
+
+    <section data-client-dashboard>
+      <section id="welcome" class="page-hero">
+        <div>
+          <p class="eyebrow">Welcome, <span data-user-name>Client</span></p>
+          <h1>Client Dashboard</h1>
+          <p class="lead">Post work, review proposals, hire freelancers, manage messages, and keep your wallet activity visible.</p>
+          <a class="button" href="post-job.html">Post Job</a>
+        </div>
+        <img class="page-hero-image" src="assets/images/jobnest-workspace.svg" alt="JobNest client dashboard workspace illustration">
+      </section>
+
+      <section id="jobs" class="grid">
+        <article class="card"><h2>Active jobs</h2><p class="stat" data-client-open-jobs>0</p><p class="muted">Jobs currently visible</p></article>
+        <article class="card"><h2>Pending jobs</h2><p class="stat" data-client-pending-jobs>2</p><p class="muted">Drafts or approval queue</p></article>
+        <article class="card"><h2>Freelancers hired</h2><p class="stat" data-client-hired>8</p><p class="muted">Across current projects</p></article>
+        <article class="card"><h2>Messages</h2><p class="stat" data-client-proposals>0</p><p class="muted">New proposals and replies</p></article>
+        <article class="card"><h2>Wallet balance</h2><p class="stat">$2.4k</p><p class="muted">Available for deposits</p></article>
+        <article class="card"><h2>Notifications</h2><p class="stat accent-stat">5</p><p class="muted">Items need attention</p></article>
+      </section>
+
+      <section class="admin-panel">
+        <div class="panel-heading"><p class="eyebrow">Recent activity</p><h2>Hiring timeline</h2></div>
+        <div class="timeline">
+          <article><strong>Brand Identity Kit received 4 proposals</strong><span class="muted">Review shortlisted designers before Friday.</span></article>
+          <article><strong>React Landing Page moved to active</strong><span class="muted">Deposit is marked pending in wallet.</span></article>
+          <article><strong>New message from Ayesha Khan</strong><span class="muted">Portfolio link and milestone plan attached.</span></article>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="footer-bottom">JobNest &copy; <span data-year></span>. Client workspace.</div></footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

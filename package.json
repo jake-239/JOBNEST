@@ -1,0 +1,17 @@
+{
+  "name": "jobnest",
+  "version": "1.0.0",
+  "description": "JobNest freelance marketplace starter",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "node backend/server.js"
+  },
+  "keywords": [
+    "freelance",
+    "marketplace",
+    "jobnest"
+  ],
+  "author": "",
+  "license": "MIT"
+}

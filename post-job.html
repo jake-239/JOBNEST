@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post Job | JobNest</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="index.html"><span class="brand-mark">JN</span><span>JobNest</span></a>
+      <div class="nav-links">
+        <a href="client-dashboard.html">Dashboard</a>
+        <a href="browse-jobs.html">Browse Jobs</a>
+        <a href="wallet.html">Wallet</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="page-hero">
+      <div>
+        <p class="eyebrow">Post job</p>
+        <h1>Publish a clear project brief.</h1>
+        <p class="lead">Add title, description, category, skills, budget, deadline, and attachments so freelancers know exactly how to apply.</p>
+      </div>
+      <img class="page-hero-image" src="assets/images/jobnest-workspace.svg" alt="JobNest job posting workspace illustration">
+    </section>
+
+    <section class="two-column">
+      <form class="panel form" data-post-job-form>
+        <label>Job title<input name="title" type="text" placeholder="Website redesign" required></label>
+        <label>Description<textarea name="description" placeholder="Describe the project, goals, deliverables, and timeline" required></textarea></label>
+        <label>Category<select name="category"><option>Web Development</option><option>Design</option><option>Writing</option><option>Marketing</option><option>Support</option></select></label>
+        <label>Skills<input name="skills" type="text" placeholder="React, CSS, landing pages"></label>
+        <div class="form-row">
+          <label>Budget<input name="budget" type="number" placeholder="500" required></label>
+          <label>Deadline<input name="deadline" type="date"></label>
+        </div>
+        <label>Attachments<input name="attachments" type="file"></label>
+        <button class="button" type="submit">Publish Job</button>
+      </form>
+
+      <aside class="panel">
+        <h2>Brief quality checklist</h2>
+        <ul class="check-list">
+          <li>Write a specific outcome, not just a task name.</li>
+          <li>List skills and tools that matter.</li>
+          <li>Add a realistic deadline and budget.</li>
+          <li>Attach references or examples when possible.</li>
+        </ul>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="footer-bottom">JobNest &copy; <span data-year></span>. Post better jobs.</div></footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

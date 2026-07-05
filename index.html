@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JobNest | Freelance Marketplace</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="index.html"><span class="brand-mark">JN</span><span>JobNest</span></a>
+      <div class="nav-links">
+        <a href="browse-jobs.html">Browse Jobs</a>
+        <a href="categories.html">Categories</a>
+        <a href="services.html">Services</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="login.html" data-guest-only>Login</a>
+        <a class="button" href="signup.html" data-guest-only>Get Started</a>
+        <a href="profile.html" data-auth-only>Profile</a>
+        <a href="#" data-logout data-auth-only>Logout</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <p class="eyebrow">Freelance marketplace for serious work</p>
+          <h1>JobNest</h1>
+          <p class="lead">Hire verified freelancers, find flexible projects, manage messages, and keep payments organized in one clean workspace.</p>
+          <div class="hero-actions">
+            <a class="button" href="choose-account.html">Join JobNest</a>
+            <a class="button secondary" href="browse-jobs.html">Browse Jobs</a>
+          </div>
+          <form class="search-panel" action="browse-jobs.html">
+            <label class="field-label">Search talent or jobs<input name="search" type="search" placeholder="Website, logo, copywriting"></label>
+            <label class="field-label">Category<select name="category"><option>All categories</option><option>Web Development</option><option>Design</option><option>Writing</option><option>Marketing</option></select></label>
+            <label class="field-label">Budget<select name="budget"><option>Any budget</option><option>$100+</option><option>$500+</option><option>$1,000+</option></select></label>
+            <button class="button" type="submit">Search</button>
+          </form>
+          <div class="trusted-strip" aria-label="Trusted companies">
+            <span>Northstar Studio</span>
+            <span>PixelForge</span>
+            <span>BrightCart</span>
+            <span>ScaleLabs</span>
+          </div>
+          <div class="hero-metrics">
+            <div class="metric-pill"><strong data-active-jobs>0</strong><span>Active jobs</span></div>
+            <div class="metric-pill"><strong data-freelancers>0</strong><span>Verified freelancers</span></div>
+            <div class="metric-pill"><strong>$2.8M</strong><span>Marketplace earnings</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-section">
+      <div class="section-heading">
+        <p class="eyebrow">Categories</p>
+        <h2>Explore the work clients need every week.</h2>
+        <p class="lead">From quick creative tasks to longer product builds, JobNest keeps each opportunity easy to scan and easy to act on.</p>
+      </div>
+      <div class="grid">
+        <article class="card"><span class="badge">Development</span><h3>Web Development</h3><p class="muted">Landing pages, dashboards, ecommerce, APIs, and maintenance.</p></article>
+        <article class="card"><span class="badge accent">Creative</span><h3>Design &amp; Branding</h3><p class="muted">Logos, UI systems, pitch decks, product mockups, and brand kits.</p></article>
+        <article class="card"><span class="badge violet">Growth</span><h3>Writing &amp; Marketing</h3><p class="muted">SEO articles, ad copy, email campaigns, and launch content.</p></article>
+        <article class="card"><span class="badge">Ops</span><h3>Virtual Support</h3><p class="muted">Customer support, research, data entry, and admin workflows.</p></article>
+      </div>
+    </section>
+
+    <section class="home-section split-section">
+      <div>
+        <p class="eyebrow">Featured freelancers</p>
+        <h2>Shortlist people who already look ready for the work.</h2>
+        <p class="lead">Profile cards highlight skills, ratings, project focus, and response speed so clients can move from search to conversation quickly.</p>
+        <a class="button" href="freelancer-details.html">View Freelancer</a>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <div class="card-row"><span class="avatar">AK</span><span class="rating">4.9 rating</span></div>
+          <h3>Ayesha Khan</h3>
+          <p class="muted">Frontend developer specializing in clean SaaS interfaces.</p>
+          <div class="tag-cloud"><span>React</span><span>CSS</span><span>UI</span></div>
+        </article>
+        <article class="card">
+          <div class="card-row"><span class="avatar">MR</span><span class="rating">5.0 rating</span></div>
+          <h3>Marcus Reed</h3>
+          <p class="muted">Brand designer for ecommerce and early stage products.</p>
+          <div class="tag-cloud"><span>Logo</span><span>Figma</span><span>Brand</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="home-section">
+      <div class="section-heading">
+        <p class="eyebrow">Featured jobs</p>
+        <h2>Start with sample opportunities that feel real.</h2>
+      </div>
+      <div class="grid">
+        <article class="card job-card">
+          <div><span class="badge">Web Development</span><h3>React Landing Page</h3><p class="muted">Build a responsive landing page for a SaaS product.</p></div>
+          <div class="job-card-footer"><strong>$450</strong><span class="rating">Client 4.8</span><a class="button secondary" href="job-details.html?id=j_react">Apply</a></div>
+        </article>
+        <article class="card job-card">
+          <div><span class="badge accent">Design</span><h3>Brand Identity Kit</h3><p class="muted">Create a logo, colors, typography, and social templates.</p></div>
+          <div class="job-card-footer"><strong>$700</strong><span class="rating">Client 4.9</span><a class="button secondary" href="job-details.html?id=j_brand">Apply</a></div>
+        </article>
+        <article class="card job-card">
+          <div><span class="badge violet">Writing</span><h3>SEO Blog Series</h3><p class="muted">Write ten search-friendly articles for a startup blog.</p></div>
+          <div class="job-card-footer"><strong>$350</strong><span class="rating">Client 4.7</span><a class="button secondary" href="job-details.html?id=j_seo">Apply</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="home-section">
+      <div class="section-heading">
+        <p class="eyebrow">How it works</p>
+        <h2>A straightforward path from idea to paid work.</h2>
+      </div>
+      <div class="grid">
+        <article class="card"><span class="badge">01</span><h3>Post or discover</h3><p class="muted">Clients publish project briefs. Freelancers filter jobs by skill, category, rating, and budget.</p></article>
+        <article class="card"><span class="badge">02</span><h3>Message and agree</h3><p class="muted">Discuss scope, share files, and keep decisions attached to the project conversation.</p></article>
+        <article class="card"><span class="badge">03</span><h3>Track and get paid</h3><p class="muted">Dashboards, wallet summaries, and activity logs help everyone see what is happening next.</p></article>
+      </div>
+    </section>
+
+    <section class="home-section split-section reverse">
+      <img class="section-image" src="assets/images/jobnest-workspace.svg" alt="JobNest pricing workspace preview">
+      <div>
+        <p class="eyebrow">Pricing</p>
+        <h2>Start free, upgrade when your workflow grows.</h2>
+        <p class="lead">Use JobNest for basic posting and browsing, then add better visibility, more job slots, and team reporting when you need it.</p>
+        <div class="quick-actions">
+          <a class="button" href="pricing.html">View Plans</a>
+          <a class="button secondary" href="services.html">See Services</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-section">
+      <div class="section-heading">
+        <p class="eyebrow">Proof</p>
+        <h2>Built for repeat hiring and repeat work.</h2>
+      </div>
+      <div class="grid">
+        <article class="card"><p class="lead">"JobNest helped us compare proposals without losing the project brief."</p><strong>Sarah Malik</strong><p class="muted">Founder, BrightCart</p></article>
+        <article class="card"><p class="lead">"The dashboard makes applications, messages, and wallet activity feel connected."</p><strong>Omar Lewis</strong><p class="muted">Freelance developer</p></article>
+        <article class="card"><p class="lead">"It feels closer to a real hiring workspace than a list of random posts."</p><strong>Nina Patel</strong><p class="muted">Operations lead</p></article>
+      </div>
+      <div class="metric-strip">
+        <article class="card"><span class="stat">18k</span><p class="muted">Registered users</p></article>
+        <article class="card"><span class="stat accent-stat">6.4k</span><p class="muted">Completed jobs</p></article>
+        <article class="card"><span class="stat">92%</span><p class="muted">Repeat client satisfaction</p></article>
+      </div>
+    </section>
+
+    <section class="home-section cta-band">
+      <div>
+        <p class="eyebrow">Download app</p>
+        <h2>Take JobNest with you.</h2>
+        <p class="muted">Mobile app screens are ready for notifications, saved jobs, wallet checks, and quick message replies.</p>
+      </div>
+      <div class="cta-actions">
+        <a class="button" href="notifications.html">View Notifications</a>
+        <a class="button secondary" href="saved-jobs.html">Saved Jobs</a>
+      </div>
+    </section>
+
+    <section class="home-section cta-band">
+      <div>
+        <p class="eyebrow">Newsletter</p>
+        <h2>Get weekly jobs, hiring tips, and product updates.</h2>
+      </div>
+      <form class="form-row">
+        <input type="email" placeholder="you@example.com" aria-label="Email address">
+        <button class="button" type="submit">Subscribe</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div><h3>JobNest</h3><p>Freelance hiring, project conversations, and wallet-ready workflows in one place.</p></div>
+      <div><h4>Marketplace</h4><div class="footer-links"><a href="browse-jobs.html">Browse Jobs</a><a href="categories.html">Categories</a><a href="services.html">Services</a></div></div>
+      <div><h4>Account</h4><div class="footer-links"><a href="login.html">Login</a><a href="signup.html">Signup</a><a href="choose-account.html">Choose Account</a></div></div>
+      <div><h4>Company</h4><div class="footer-links"><a href="about.html">About</a><a href="contact.html">Contact</a><a href="privacy-policy.html">Privacy</a></div></div>
+    </div>
+    <div class="footer-bottom">JobNest &copy; <span data-year></span>. Built for modern freelance work.</div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

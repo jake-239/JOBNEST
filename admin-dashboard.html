@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard | JobNest</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="index.html"><span class="brand-mark">JN</span><span>JobNest</span></a>
+      <div class="nav-links">
+        <a href="profile.html">Profile</a>
+        <a href="wallet.html">Wallet</a>
+        <a href="settings.html">Settings</a>
+        <a href="#" data-logout>Logout</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page dashboard">
+    <aside class="sidebar">
+      <a class="active" href="#overview">Overview</a>
+      <a href="#users">Manage Users</a>
+      <a href="#jobs">Approve Jobs</a>
+      <a href="#reports">Reports</a>
+      <a href="#payments">Payments</a>
+      <a href="#settings">Settings</a>
+    </aside>
+
+    <section data-admin-dashboard>
+      <section class="page-hero">
+        <div>
+          <p class="eyebrow">Platform control</p>
+          <h1>Admin Dashboard</h1>
+          <p class="lead">Monitor users, freelancers, clients, jobs, reports, approvals, payments, and settings from one command center.</p>
+        </div>
+        <img class="page-hero-image" src="assets/images/jobnest-workspace.svg" alt="JobNest admin dashboard workspace illustration">
+      </section>
+
+      <section id="overview" class="admin-panel">
+        <div class="grid">
+          <article class="card"><h2>Total users</h2><p class="stat" data-admin-users>0</p><p class="muted">All platform accounts</p></article>
+          <article class="card"><h2>Total freelancers</h2><p class="stat" data-admin-freelancers>0</p><p class="muted">Talent accounts</p></article>
+          <article class="card"><h2>Total clients</h2><p class="stat" data-admin-clients>0</p><p class="muted">Hiring accounts</p></article>
+          <article class="card"><h2>Total jobs</h2><p class="stat" data-admin-jobs>0</p><p class="muted">Published jobs</p></article>
+          <article class="card"><h2>Reports</h2><p class="stat" data-admin-reports>0</p><p class="muted">Open moderation items</p></article>
+          <article class="card"><h2>Payments</h2><p class="stat" data-admin-payments>$0</p><p class="muted">Tracked wallet volume</p></article>
+        </div>
+      </section>
+
+      <section id="users" class="admin-panel">
+        <div class="panel-heading"><p class="eyebrow">Manage users</p><h2>User Control</h2><p class="muted">Change roles, inspect bios, or remove accounts that should not remain active.</p></div>
+        <div class="admin-list" data-admin-users-list></div>
+      </section>
+
+      <section id="jobs" class="admin-panel">
+        <div class="panel-heading"><p class="eyebrow">Approve jobs</p><h2>Job Control</h2><p class="muted">Review job posts, inspect budgets, and remove listings that should not be live.</p></div>
+        <div class="admin-list" data-admin-jobs-list></div>
+      </section>
+
+      <section id="reports" class="admin-panel">
+        <div class="panel-heading"><p class="eyebrow">Reports</p><h2>Moderation Queue</h2><p class="muted">Message records and platform reports appear here for review.</p></div>
+        <div class="admin-list" data-admin-messages-list></div>
+      </section>
+
+      <section id="payments" class="admin-panel">
+        <div class="panel-heading"><p class="eyebrow">Payments</p><h2>Wallet Control</h2><p class="muted">Adjust available, pending, and withdrawn balances for any account.</p></div>
+        <div class="admin-list" data-admin-wallet-list></div>
+      </section>
+
+      <section id="settings" class="admin-panel">
+        <div class="panel-heading"><p class="eyebrow">Settings</p><h2>Platform Settings</h2></div>
+        <div class="grid">
+          <article class="card"><h3>Marketplace rules</h3><p class="muted">Review job approval settings, dispute windows, and account review policies.</p><a class="button secondary" href="settings.html">Open Settings</a></article>
+          <article class="card"><h3>Notifications</h3><p class="muted">Control alerts for new reports, high-value payments, and account changes.</p><a class="button secondary" href="notifications.html">View Alerts</a></article>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-bottom">JobNest &copy; <span data-year></span>. Admin workspace.</div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

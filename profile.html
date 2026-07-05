@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile | JobNest</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="index.html"><span class="brand-mark">JN</span><span>JobNest</span></a>
+      <div class="nav-links">
+        <a href="messages.html">Messages</a>
+        <a href="wallet.html">Wallet</a>
+        <a href="settings.html">Settings</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="profile-shell">
+      <div class="cover-photo" aria-label="Cover photo"></div>
+      <div class="profile-body">
+        <div>
+          <div class="profile-photo" aria-label="Profile photo">FK</div>
+          <a class="button secondary" href="contact.html">Contact</a>
+        </div>
+        <div>
+          <p class="eyebrow">Profile</p>
+          <h1 data-user-name>Fatima Khan</h1>
+          <p class="lead">Building clean, responsive web experiences for clients who need practical, polished interfaces.</p>
+          <div class="quick-actions"><button class="button" form="profile-form" type="submit">Edit Profile</button><a class="button secondary" href="freelancer-details.html">Public Preview</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section two-column">
+      <form id="profile-form" class="panel form" data-profile-form>
+        <h2>Edit profile</h2>
+        <label>Name<input name="name" type="text" value="Fatima Khan"></label>
+        <label>Role<input name="role" type="text" value="Freelancer" readonly></label>
+        <label>Bio<textarea name="bio">Building clean, responsive web experiences.</textarea></label>
+        <button class="button" type="submit">Save Profile</button>
+      </form>
+
+      <aside class="panel">
+        <h2>Skills</h2>
+        <div class="tag-cloud"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span><span>Dashboard UI</span></div>
+        <h2>Experience</h2>
+        <p class="muted">5 years designing and building responsive websites, marketplaces, and client dashboards.</p>
+      </aside>
+    </section>
+
+    <section class="content-section grid">
+      <article class="card"><h2>Portfolio</h2><p class="muted">SaaS landing page, ecommerce dashboard, portfolio site, and brand system examples.</p></article>
+      <article class="card"><h2>Reviews</h2><p class="rating">4.9 average rating</p><p class="muted">Clients praise fast delivery, clean communication, and polished UI work.</p></article>
+      <article class="card"><h2>Certificates</h2><p class="muted">Responsive Web Design, UI Accessibility, JavaScript Foundations.</p></article>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="footer-bottom">JobNest &copy; <span data-year></span>. Profile.</div></footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
